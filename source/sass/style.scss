@@ -1,10 +1,6 @@
 @import "vendor/normalize";
-
 @import "variables";
 @import "global/fonts";
-
-// Blocks
-// ---------------------------------
-
-@import "blocks/btn";
-@import "blocks/modal";
+@import "global/visually-hidden";
+@import "blocks/button";
+@import "blocks/page";
