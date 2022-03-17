@@ -1,0 +1,14 @@
+.promo {
+  background-color: $blue-basic;
+  min-height: $promo-desktop-height;
+
+  @media (max-width: $tablet-width) {
+    min-height: $promo-tablet-height;
+  }
+}
+
+.promo__header {
+  margin: 0;
+}
+
+

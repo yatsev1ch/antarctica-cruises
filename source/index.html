@@ -10,11 +10,41 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-
+    <!-- <header class="page-header page-header--no-js"> -->
+      <div class="page-header__wrapper">
+      <!-- <div class="page-header__wrapper page-header__wrapper--opened"> -->
+      <!-- <div class="page-header__wrapper page-header__wrapper--no-js"> -->
+        <div class="page-header__logo-wrapper">
+          <a href="" class="page-header__logo site-logo">
+            <svg class="page-header__logo-image site-logo__image" width="70" height="38">
+              <use xlink:href="img/sprite_auto.svg#site-logo"></use>
+            </svg>
+          </a>
+          <button class="page-header__menu-button">Открыть меню</button>
+        </div>
+        <nav class="page-header__site-nav site-nav">
+          <ul class="page-header__nav-items">
+            <li class="page-header__nav-item">
+              <a href="#advantages" class="page-header__nav-link">Преимущества</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link">Направления</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#cruises" class="page-header__nav-link">Ближайшие круизы</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#contacts" class="page-header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="promo">
-        <h1>Круизы в Антарктику</h1>
+        <div class="promo__wrapper">
+          <h1 class="promo__header">Круизы в Антарктику</h1>
+        </div>
       </section>
       <article class="adventure"></article>
       <section class="advantages"></section>

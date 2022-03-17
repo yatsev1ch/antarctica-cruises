@@ -12,6 +12,9 @@
   line-height: 150%;
   color: $blue-basic;
   background-color: $white;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .page__body ul {
