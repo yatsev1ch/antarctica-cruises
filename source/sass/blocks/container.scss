@@ -1,0 +1,9 @@
+.container {
+  @media (max-width: $tablet-breakpoint) {
+    padding: 0 $tablet-padding;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0 $mobile-padding;
+  }
+}

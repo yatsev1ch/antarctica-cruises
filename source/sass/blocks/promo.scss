@@ -1,14 +1,85 @@
 .promo {
   background-color: $blue-basic;
   min-height: $promo-desktop-height;
+  box-sizing: border-box;
+  background-image: url("../../img/backgrounds/promo-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-container-width) and (min-resolution: 2dppx) {
+    background-image: url("../../img/backgrounds/promo-desktop@2x.png");
+  }
+
+  @media (max-width: $tablet-breakpoint) {
     min-height: $promo-tablet-height;
+    background-image: url("../../img/backgrounds/promo-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/promo-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    min-height: $promo-mobile-height;
+    background-image: url("../../img/backgrounds/promo-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/promo-mobile@2x.png");
+    }
+  }
+
+}
+
+.promo__wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: $header-desktop-offset 95px 20px;
+  max-width: $desktop-container-width;
+
+  @media (max-width: $tablet-breakpoint) {
+    max-width: initial;
+    margin: 0;
+    padding: $header-tablet-offset 0 20px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: $header-mobile-offset 0 20px;
   }
 }
 
 .promo__header {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: $white-basic;
+  font-size: 54px;
+  line-height: 100%;
+  font-weight: 700;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 50px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 36px;
+    line-height: 125%;
+    margin-bottom: 12px;
+  }
+}
+
+.promo__description {
+  color: $white-basic;
+  font-size: 20px;
   margin: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 
 

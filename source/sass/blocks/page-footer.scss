@@ -1,0 +1,145 @@
+.page-footer {
+  background-color: $blue-basic;
+}
+
+.page-footer__wrapper {
+  max-width: $desktop-container-width;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin: 0;
+    padding: 40px 0;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.page-footer__logo {
+  fill: $white-basic;
+  margin-right: 40px;
+  flex-shrink: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: 25px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
+}
+
+.page-footer__nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+}
+
+.page-footer__nav-item {
+  margin-right: 36px;
+
+  &:last-child {
+    margin-right: 0;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: 25px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.page-footer__nav-link {
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: $white-basic;
+  font-weight: 500;
+  padding: 8px 0;
+
+  @media (max-width: $tablet-breakpoint) {
+   font-size: 12px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0;
+  }
+}
+
+.page-footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-left: auto;
+  padding-top: 4px;
+  max-width: 150px;
+
+  @media (max-width: $tablet-breakpoint) {
+    max-width: 145px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.page-footer__social {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  text-decoration: none;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 32px;
+  margin-bottom: 4px;
+
+  &:nth-child(n+3) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 16px;
+    height: 16px;
+    margin-right: 22px;
+  }
+
+  &--facebook {
+    background-image: url("../../img/svg/facebook-icon.svg");
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 11px;
+    }
+  }
+
+  &--instagram {
+    background-image: url("../../img/svg/instagram-icon.svg");
+  }
+
+  &--twitter {
+    background-image: url("../../img/svg/twitter-icon.svg");
+  }
+}

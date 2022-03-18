@@ -41,20 +41,57 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="promo">
+      <section class="promo container">
         <div class="promo__wrapper">
-          <h1 class="promo__header">Круизы в Антарктику</h1>
+          <h1 class="promo__header">Круизы в&nbsp;Антарктику</h1>
+          <p class="promo__description">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
         </div>
       </section>
-      <article class="adventure"></article>
+      <article class="adventure container">
+        <h2 class="adventure__header">Путешествие на&nbsp;край&nbsp;Земли</h2>
+        <p class="adventure__description">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+        <picture class="adventure__image">
+          <!-- <source type="image/webp" media="(max-width: 677px)" srcset="img/content/adventure-mobile.webp 1x, img/content/adventure-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1159px)" srcset="img/content/adventure-tablet.webp 1x, img/content/adventure-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/adventure-desktop.webp 1x, img/content/adventure-desktop@2x.webp 2x"> -->
+          <source media="(max-width: 677px)" srcset="img/content/adventure-mobile.png 1x, img/content/adventure-mobile@2x.png 2x">
+          <source media="(max-width: 1159px)" srcset="img/content/adventure-tablet.png 1x, img/content/adventure-tablet@2x.png 2x">
+          <img class="adventure__image" src="img/content/adventure-desktop.png" srcset="img/content/adventure-desktop@2x.png 2x" alt="Три пингвина" width="560" height="301">
+        </picture>
+      </article>
       <section class="advantages"></section>
       <section class="cruises"></section>
       <section class="booking"></section>
       <section class="contacts"></section>
 
     </main>
-    <footer class="page-footer">
-
+    <footer class="page-footer container">
+      <div class="page-footer__wrapper">
+        <a href="" class="page-footer__logo site-logo">
+          <svg class="page-footer__logo-image site-logo__image" width="70" height="38">
+            <use xlink:href="img/sprite_auto.svg#site-logo"></use>
+          </svg>
+        </a>
+        <ul class="page-footer__nav-items">
+          <li class="page-footer__nav-item">
+            <a href="#advantages" class="page-footer__nav-link">Преимущества</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Направления</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#cruises" class="page-footer__nav-link">Ближайшие круизы</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#contacts" class="page-footer__nav-link">Контакты</a>
+          </li>
+        </ul>
+        <div class="page-footer__socials">
+          <a href="https://facebook.com" class="page-footer__social page-footer__social--facebook">Facebook</a>
+          <a href="https://instagram.com" class="page-footer__social page-footer__social--instagram">Instagram</a>
+          <a href="https://twitter.com" class="page-footer__social page-footer__social--twitter">Twitter</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,82 @@
+.adventure {
+  max-width: $desktop-container-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 120px 0;
+
+  display: grid;
+  align-content: start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+
+  @media (max-width: $tablet-breakpoint) {
+    margin: 0;
+    padding-top: 91px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 58px;
+  }
+}
+
+.adventure__header {
+  grid-column: 1;
+  grid-row: 1 / 2;
+
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-top: 56px;
+  margin-bottom: 24px;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 26px;
+    line-height: 140%;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 24px;
+  }
+
+
+}
+
+.adventure__description {
+  grid-column: 1;
+  grid-row: 2 / 3;
+
+  margin-top: 0;
+  margin-right: 30px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 32px;
+  }
+}
+
+.adventure__image {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  margin-left: 10px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-left: 8px;
+    margin-top: 5px;
+    width: 324px;
+    height: 264px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    grid-row: 3 / 4;
+    grid-column: 1;
+    margin: 0;
+    width: 290px;
+    height: 186px;
+  }
+}
