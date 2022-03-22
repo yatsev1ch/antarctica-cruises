@@ -75,7 +75,8 @@
     padding: 0 25px;
   }
 
-  &:hover .cruises__cruise-overlay {
+  &:hover .cruises__cruise-overlay,
+  &:focus-within .cruises__cruise-overlay {
     display: block;
   }
 }

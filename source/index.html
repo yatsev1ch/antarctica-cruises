@@ -78,7 +78,7 @@
       <section class="cruises" id="cruises">
         <h2 class="cruises__header">Ближайшие круизы</h2>
         <ul class="cruises__cruises-list">
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз "Астория"</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/astoria-mobile.webp 1x, img/content/astoria-mobile@2x.webp 2x">
@@ -111,7 +111,7 @@
               <a href="#" class="cruises__cruise-button button">Забронировать</a>
             </div>
           </li>
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз “Элайн”</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/astoria-mobile.webp 1x, img/content/astoria-mobile@2x.webp 2x">
@@ -144,7 +144,7 @@
               <a href="#" class="cruises__cruise-button button">Забронировать</a>
             </div>
           </li>
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз "Атлантис"</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/atlantis-mobile.webp 1x, img/content/atlantis-mobile@2x.webp 2x">
@@ -177,7 +177,7 @@
               <a href="#" class="cruises__cruise-button button">Забронировать</a>
             </div>
           </li>
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз "Одиссей"</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/odyssey-mobile.webp 1x, img/content/odyssey-mobile@2x.webp 2x">
@@ -210,7 +210,7 @@
               <a href="#" class="cruises__cruise-button button">Забронировать</a>
             </div>
           </li>
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз "Олимпия"</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/olympia-mobile.webp 1x, img/content/olympia-mobile@2x.webp 2x">
@@ -243,7 +243,7 @@
               <a href="#" class="cruises__cruise-button button">Забронировать</a>
             </div>
           </li>
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз "Аврора"</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/aurora-mobile.webp 1x, img/content/aurora-mobile@2x.webp 2x">
@@ -276,7 +276,7 @@
               <a href="#" class="cruises__cruise-button button">Забронировать</a>
             </div>
           </li>
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз "Леонор"</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/leonor-mobile.webp 1x, img/content/leonor-mobile@2x.webp 2x">
@@ -309,7 +309,7 @@
               <a href="#" class="cruises__cruise-button button">Забронировать</a>
             </div>
           </li>
-          <li class="cruises__cruise">
+          <li class="cruises__cruise" tabindex="0">
             <h3 class="cruises__cruise-header">Круиз "Минион - 1"</h3>
             <picture class="cruises__cruise-image">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/content/minion-mobile.webp 1x, img/content/minion-mobile@2x.webp 2x">
@@ -358,8 +358,8 @@
               <input class="booking__form-input booking__form-input--phone" type="tel" id="phone-field" name="phone" placeholder="Телефон" pattern="[0-9]{11}" required>
               <label for="email-field" class="visually-hidden">Имя</label>
               <input class="booking__form-input booking__form-input--email" type="email" id="email-field" name="email" placeholder="Email" required>
-              <input type="checkbox" class="booking__checkbox visually-hidden" id="checkbox" required>
-              <label for="checkbox" class="booking__checkbox-label">Я согласен на обработку моих персональных данных</label>
+              <input type="checkbox" class="booking__checkbox visually-hidden" id="checkbox" tabindex="-1" required>
+              <label for="checkbox" class="booking__checkbox-label" tabindex="0">Я согласен на обработку моих персональных данных</label>
               <button class="booking__form-button button" type="submit">Оставить заявку</button>
             </form>
           </div>
@@ -368,7 +368,7 @@
       <section class="contacts container" id="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.32085871619321!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1647897657190!5m2!1sru!2sby" width="560" height="306" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="contacts__map" tabindex="-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.32085871619321!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1647897657190!5m2!1sru!2sby" width="560" height="306" allowfullscreen="" loading="lazy"></iframe>
         <p class="contacts__description">У вас ещё остались вопросы или сомнения?
           Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
         <p class="contacts__contact contacts__contact--address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
