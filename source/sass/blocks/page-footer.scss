@@ -38,6 +38,7 @@
 
 .page-footer__nav-items {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   box-sizing: border-box;
   margin-top: 0;
@@ -90,11 +91,10 @@
   flex-shrink: 0;
   margin-left: auto;
   padding-top: 2px;
-  max-width: 150px;
+  max-width: 200px;
 
   @media (max-width: $tablet-breakpoint) {
     padding-top: 5px;
-    max-width: 145px;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -113,11 +113,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-right: 32px;
+  margin-left: 32px;
   margin-bottom: 4px;
 
-  &:nth-child(n+3) {
-    margin-right: 0;
+  &:first-child {
+    margin-left: 0;
   }
 
   &:hover,
@@ -128,7 +128,7 @@
   @media (max-width: $tablet-breakpoint) {
     width: 16px;
     height: 16px;
-    margin-right: 22px;
+    margin-left: 22px;
   }
 
   &--facebook {
