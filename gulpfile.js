@@ -14,6 +14,8 @@ const del = require('del');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 const gcmq = require('gulp-group-css-media-queries');
+const terser = require('gulp-terser');
+
 
 const css = () => {
   return gulp.src('source/sass/style.scss')
@@ -33,10 +35,13 @@ const css = () => {
 };
 
 const js = () => {
-  return gulp.src(['source/js/main.js'])
-      .pipe(webpackStream(webpackConfig))
-      .pipe(gulp.dest('build/js'))
-};
+  return gulp.src('source/js/*.js')
+    .pipe(terser())
+    .pipe(rename( (file) => {
+      file.basename += '.min';
+    }))
+    .pipe(gulp.dest('build/js'));
+}
 
 const svgo = () => {
   return gulp.src('source/img/**/*.{svg}')
@@ -50,6 +55,21 @@ const svgo = () => {
           }),
       ]))
       .pipe(gulp.dest('source/img'));
+};
+
+const createWebp = () => {
+  return gulp.src(`source/img/content/*.{png,jpg}`)
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest(`build/img/content`));
+};
+
+const optimizeImages = () => {
+  return gulp.src('build/img/**/*.{png,jpg}')
+      .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.mozjpeg({quality: 75, progressive: true}),
+      ]))
+      .pipe(gulp.dest('build/img'));
 };
 
 const sprite = () => {
@@ -100,7 +120,6 @@ const syncServer = () => {
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, refresh));
   gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, refresh));
-
   gulp.watch('source/favicon/**', gulp.series(copy, refresh));
   gulp.watch('source/video/**', gulp.series(copy, refresh));
   gulp.watch('source/downloads/**', gulp.series(copy, refresh));
@@ -112,36 +131,9 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite);
+const build = gulp.series(clean, svgo, copy, css, sprite, createWebp, js);
 
 const start = gulp.series(build, syncServer);
 
-// Optional tasks
-//---------------------------------
-
-// Используйте отличное от дефолтного значение root, если нужно обработать отдельную папку в img,
-// а не все изображения в img во всех папках.
-
-// root = '' - по дефолту webp добавляются и обналяются во всех папках в source/img/
-// root = 'content/' - webp добавляются и обновляются только в source/img/content/
-
-const createWebp = () => {
-  const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(`source/img/${root}`));
-};
-
-const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
-      .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.mozjpeg({quality: 75, progressive: true}),
-      ]))
-      .pipe(gulp.dest('build/img'));
-};
-
-exports.imagemin = optimizeImages;
-exports.webp = createWebp;
 exports.start = start;
 exports.build = build;

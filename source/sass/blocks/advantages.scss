@@ -1,0 +1,180 @@
+.advantages {
+  background-color: $blue-advantages;
+  background-image: url("../../img/backgrounds/advantages-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
+    background-image: url("../../img/backgrounds/advantages-desktop@2x.png");
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../../img/backgrounds/advantages-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/advantages-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-image: url("../../img/backgrounds/advantages-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/advantages-mobile@2x.png");
+    }
+  }
+}
+
+.advantages__wrapper {
+  max-width: $desktop-wrapper-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 110px 0 84px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 91px 0 64px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 58px 0 29px;
+  }
+}
+
+.advantages__header {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 49px;
+
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 26px;
+    line-height: 140%;
+    margin-bottom: 51px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 15px;
+
+  @media (max-width: $tablet-breakpoint) {
+    column-gap: 30px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: none;
+  }
+}
+
+.advantages__advantage {
+  width: 360px;
+  min-height: 241px;
+  background-color: $white-basic;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 82px 30px 11px;
+
+  @media (max-width: $tablet-breakpoint) {
+    min-width: 206px;
+    max-width: 330px;
+    width: auto;
+    padding: 71px 15px 9px 20px;
+    min-height: 310px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    justify-self: center;
+    min-width: 290px;
+    max-width: 450px;
+    min-height: 249px;
+    padding-bottom: 7px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 30px;
+
+    @media (max-width: $tablet-breakpoint) {
+      left: 20px;
+    }
+  }
+
+  &--ship::before {
+    background-image: url("../../img/svg/ship-icon.svg");
+    height: 32px;
+    width: 27px;
+    top: 30px;
+
+    @media (max-width: $tablet-breakpoint) {
+      height: 26px;
+      width: 21px;
+      top: 25px;
+    }
+  }
+
+  &--all-inclusive::before {
+    background-image: url("../../img/svg/all-inclusive-icon.svg");
+    height: 21px;
+    width: 38px;
+    top: 35px;
+
+    @media (max-width: $tablet-breakpoint) {
+      height: 19px;
+      width: 33px;
+      top: 30px;
+    }
+  }
+
+  &--zodiac::before {
+    background-image: url("../../img/svg/boat.svg");
+    height: 15px;
+    width: 42px;
+    top: 38px;
+
+    @media (max-width: $tablet-breakpoint) {
+      height: 13px;
+      width: 38px;
+      top: 32px;
+    }
+  }
+}
+
+.advantages__advantage-header {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  @media (max-width: $tablet-breakpoint) {
+    line-height: 140%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 9px;
+    max-width: 170px;
+  }
+}
+
+.advantages__advantage-description {
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 0;
+}

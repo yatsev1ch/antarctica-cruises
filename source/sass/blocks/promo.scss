@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: $tablet-container-width) and (min-resolution: 2dppx) {
+  @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
     background-image: url("../../img/backgrounds/promo-desktop@2x.png");
   }
 
@@ -27,18 +27,15 @@
       background-image: url("../../img/backgrounds/promo-mobile@2x.png");
     }
   }
-
 }
 
 .promo__wrapper {
-  box-sizing: border-box;
   margin: 0 auto;
+  max-width: $desktop-wrapper-width;
+  box-sizing: border-box;
   padding: $header-desktop-offset 95px 20px;
-  max-width: $desktop-container-width;
 
   @media (max-width: $tablet-breakpoint) {
-    max-width: initial;
-    margin: 0;
     padding: $header-tablet-offset 0 20px;
   }
 
@@ -81,5 +78,3 @@
     line-height: 140%;
   }
 }
-
-

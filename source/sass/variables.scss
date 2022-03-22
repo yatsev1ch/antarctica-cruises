@@ -1,8 +1,15 @@
 //Цвета
-$blue-basic: #011C40;
-$white-basic: #F9FBFD;
-$blue-background: #101A56;
-$white: #FFFFFF;
+
+$blue-basic: #011c40;
+$blue-advantages: #e3ecf6;
+$blue-booking: #b6dafa;
+$blue-background: #101a56;
+$blue-input-placeholder: #011c40b3;
+$white-basic: #f9fbfd;
+$white: #ffffff;
+$gray-cruise-description: #d8d8d9;
+$gray-map-background: #f2efe9;
+$gray-contacts-background: #f9fbfd;
 
 //Размеры
 
@@ -13,12 +20,11 @@ $mobile-width: 320px;
 $tablet-padding: 45px;
 $mobile-padding: 15px;
 
-$desktop-container-width: 1160px;
-$tablet-container-width: 678px;
+$desktop-wrapper-width: 1160px;
+$tablet-wrapper-width: 678px;
 
-$tablet-breakpoint: $desktop-container-width - 1;
-$mobile-breakpoint: $tablet-container-width - 1;
-
+$tablet-breakpoint: $desktop-wrapper-width - 1;
+$mobile-breakpoint: $tablet-width - 1;
 
 $promo-desktop-height: 650px;
 $promo-tablet-height: 638px;
@@ -27,4 +33,3 @@ $promo-mobile-height: 500px;
 $header-desktop-offset: 276px;
 $header-tablet-offset: 274px;
 $header-mobile-offset: 176px;
-

@@ -1,0 +1,10 @@
+.light-link {
+  color: $white-basic;
+  text-decoration: none;
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}

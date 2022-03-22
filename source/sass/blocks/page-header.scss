@@ -11,20 +11,17 @@
       margin-bottom: 0;
     }
   }
-
 }
 
 .page-header__wrapper {
-  max-width: $desktop-container-width;
+  max-width: $desktop-wrapper-width;
+  margin: 0 auto;
   box-sizing: border-box;
   padding: 35px 0;
-  margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
 
   @media (max-width: $tablet-breakpoint) {
-    max-width: initial;
-    margin: 0;
     padding: 20px $tablet-padding;
   }
 
@@ -103,6 +100,7 @@
 
 .page-header__menu-button {
   display: none;
+  cursor: pointer;
   font-size: 0;
   width: 24px;
   height: 24px;
@@ -162,10 +160,7 @@
 
 
 .page-header__nav-link {
-  display: block;
   box-sizing: border-box;
-  color: $white-basic;
-  text-decoration: none;
   padding: 8px 0;
 
   @media (max-width: $tablet-breakpoint) {

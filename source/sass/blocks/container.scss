@@ -1,4 +1,6 @@
 .container {
+  box-sizing: border-box;
+
   @media (max-width: $tablet-breakpoint) {
     padding: 0 $tablet-padding;
   }
