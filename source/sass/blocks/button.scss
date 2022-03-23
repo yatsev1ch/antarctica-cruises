@@ -7,4 +7,9 @@
   display: block;
   box-sizing: border-box;
   user-select: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }

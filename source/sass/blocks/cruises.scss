@@ -125,25 +125,22 @@
   }
 }
 
+.cruises__cruise-overlay p {
+  color: $white-basic;
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
 .cruises__cruise-properties {
+  margin: 0;
   margin-bottom: 23px;
 
   @media (max-width: $tablet-breakpoint) {
     margin-bottom: 24px;
   }
-}
-
-.cruises__cruise-property {
-  margin-bottom: 11px;
-}
-
-.cruises__overlay-header {
-  color: $white-basic;
-  margin: 0;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 13px;
-  line-height: 150%;
 }
 
 .cruises__property-name {
@@ -157,6 +154,7 @@
 
 .cruises__property-description {
   margin: 0;
+  margin-bottom: 11px;
   font-size: 14px;
   line-height: 140%;
   color: $gray-cruise-description;

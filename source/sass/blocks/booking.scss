@@ -72,7 +72,7 @@
   }
 }
 
-.booking__description {
+.booking__wrapper > p {
   font-size: 18px;
   line-height: 150%;
   grid-column: 1;
@@ -113,7 +113,7 @@
   }
 }
 
-.booking__form-description {
+.booking__form-wrapper p {
   font-size: 18px;
   font-weight: 500;
   line-height: 150%;
@@ -127,7 +127,7 @@
   }
 }
 
-.booking__form-input {
+.form input:not([type="checkbox"]) {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -147,11 +147,7 @@
   }
 }
 
-.booking__checkbox:checked + .booking__checkbox-label::after {
-  display: block;
-}
-
-.booking__checkbox-label {
+.booking form label[for="checkbox"] {
   user-select: none;
   display: block;
   position: relative;
@@ -202,7 +198,11 @@
   }
 }
 
-.booking__form-button {
+.booking form input[type="checkbox"]:checked + label[for="checkbox"]::after {
+  display: block;
+}
+
+.booking form button {
   border: none;
   padding: 13px 20px 14px;
   width: 100%;
