@@ -91,15 +91,17 @@
   flex-shrink: 0;
   margin-left: auto;
   padding-top: 2px;
-  max-width: 200px;
+  max-width: 250px;
 
   @media (max-width: $tablet-breakpoint) {
     padding-top: 5px;
+    max-width: 200px;
   }
 
   @media (max-width: $mobile-breakpoint) {
     margin-left: 0;
     margin-right: auto;
+    max-width: unset;
   }
 }
 
@@ -116,10 +118,6 @@
   margin-left: 32px;
   margin-bottom: 4px;
 
-  &:first-child {
-    margin-left: 0;
-  }
-
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -128,19 +126,20 @@
   @media (max-width: $tablet-breakpoint) {
     width: 16px;
     height: 16px;
-    margin-left: 22px;
+    margin-left: 23px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 15px;
+    margin-left: 0;
   }
 
   &--facebook {
     background-image: url("../../img/svg/facebook-icon.svg");
-    width: 15px;
-
-    @media (max-width: $tablet-breakpoint) {
-      width: 13px;
-    }
+    background-position: 7px center;
 
     @media (max-width: $mobile-breakpoint) {
-      width: 11px;
+      background-position: 0 center;
     }
   }
 
@@ -150,5 +149,10 @@
 
   &--twitter {
     background-image: url("../../img/svg/twitter-icon.svg");
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 27px;
+      background-position: 7px center;
+    }
   }
 }
