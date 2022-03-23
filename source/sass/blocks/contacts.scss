@@ -142,15 +142,16 @@
     background-image: url("../../img/svg/phone-icon.svg");
     top: 7px;
   }
+
+
+  &--phone:hover,
+  &--phone:focus {
+    opacity: 0.7;
+  }
 }
 
 .contacts__contact-link {
   display: block;
   color: inherit;
   text-decoration: inherit;
-
-  &--phone:hover,
-  &--phone:focus {
-    opacity: 0.7;
-  }
 }
