@@ -1,6 +1,12 @@
 .page {
   height: 100%;
   scroll-behavior: smooth;
+
+  &--with-menu {
+    @media (max-width: $mobile-breakpoint) {
+      overflow: hidden;
+    }
+  }
 }
 
 .page__body {

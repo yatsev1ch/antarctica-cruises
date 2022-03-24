@@ -28,6 +28,7 @@
   @media (max-width: $mobile-breakpoint) {
     padding: 20px $mobile-padding;
     flex-direction: column;
+    overflow-y: auto;
   }
 
   &--opened {
@@ -38,6 +39,13 @@
       background-color: $white-basic;
       width: 285px;
       height: 100vh;
+      z-index: 1;
+    }
+  }
+
+  &--opened ~ .page-header__menu-overlay {
+    @media (max-width: $mobile-breakpoint) {
+      display: block;
     }
   }
 
@@ -69,6 +77,16 @@
       display: none;
     }
   }
+}
+
+.page-header__menu-overlay {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  content: "";
+  width: calc(100vw);
+  height: calc(100vh);
+  top: 0;
 }
 
 
