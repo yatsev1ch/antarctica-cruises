@@ -2,29 +2,29 @@
   min-height: 555px;
 
   background-color: $blue-booking;
-  background-image: url("../../img/backgrounds/booking-desktop.png");
+  background-image: url("../img/backgrounds/booking-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
-    background-image: url("../../img/backgrounds/booking-desktop@2x.png");
+    background-image: url("../img/backgrounds/booking-desktop@2x.png");
   }
 
   @media (max-width: $tablet-breakpoint) {
-    background-image: url("../../img/backgrounds/booking-tablet.png");
+    background-image: url("../img/backgrounds/booking-tablet.png");
     min-height: 805px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/booking-tablet@2x.png");
+      background-image: url("../img/backgrounds/booking-tablet@2x.png");
     }
   }
 
   @media (max-width: $mobile-breakpoint) {
-    background-image: url("../../img/backgrounds/booking-mobile.png");
+    background-image: url("../img/backgrounds/booking-mobile.png");
     min-height: 760px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/booking-mobile@2x.png");
+      background-image: url("../img/backgrounds/booking-mobile@2x.png");
     }
   }
 }
@@ -185,7 +185,7 @@
     position: absolute;
     width: 12px;
     height: 8px;
-    background-image: url("../../img/svg/checked-icon.svg");
+    background-image: url("../img/svg/checked-icon.svg");
     background-repeat: no-repeat;
     background-size: contain;
     left: 3px;

@@ -28,7 +28,7 @@
 .contacts__map {
   border: none;
   background-color: $gray-map-background;
-  background-image: url("../../img/backgrounds/map-desktop.png");
+  background-image: url("../img/backgrounds/map-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 560px;
@@ -37,11 +37,11 @@
   margin-right: 100px;
 
   @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
-    background-image: url("../../img/backgrounds/map-desktop@2x.png");
+    background-image: url("../img/backgrounds/map-desktop@2x.png");
   }
 
   @media (max-width: $tablet-breakpoint) {
-    background-image: url("../../img/backgrounds/map-tablet.png");
+    background-image: url("../img/backgrounds/map-tablet.png");
     min-width: 324px;
     height: 335px;
     justify-self: stretch;
@@ -49,12 +49,12 @@
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/map-tablet@2x.png");
+      background-image: url("../img/backgrounds/map-tablet@2x.png");
     }
   }
 
   @media (max-width: $mobile-breakpoint) {
-    background-image: url("../../img/backgrounds/map-mobile.png");
+    background-image: url("../img/backgrounds/map-mobile.png");
 
     min-width: 290px;
     height: 316px;
@@ -62,7 +62,7 @@
     grid-row: 4;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/map-mobile@2x.png");
+      background-image: url("../img/backgrounds/map-mobile@2x.png");
     }
   }
 }
@@ -129,7 +129,7 @@
 
   &--address::before {
     height: 22px;
-    background-image: url("../../img/svg/map-pin-icon.svg");
+    background-image: url("../img/svg/map-pin-icon.svg");
     top: 4px;
 
     @media (max-width: $tablet-breakpoint) {
@@ -139,7 +139,7 @@
 
   &--phone::before {
     height: 18px;
-    background-image: url("../../img/svg/phone-icon.svg");
+    background-image: url("../img/svg/phone-icon.svg");
     top: 7px;
   }
 

@@ -547,7 +547,7 @@ template {
   height: 24px;
   background-color: transparent;
   border: none;
-  background-image: url("../../img/svg/menu-icon.svg");
+  background-image: url("../img/svg/menu-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -1px;
@@ -584,7 +584,7 @@ template {
   min-height: 650px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: url("../../img/backgrounds/promo-desktop.png");
+  background-image: url("../img/backgrounds/promo-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -663,7 +663,7 @@ template {
 
 .advantages {
   background-color: #e3ecf6;
-  background-image: url("../../img/backgrounds/advantages-desktop.png");
+  background-image: url("../img/backgrounds/advantages-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -719,21 +719,21 @@ template {
 }
 
 .advantages__advantage--ship::before {
-  background-image: url("../../img/svg/ship-icon.svg");
+  background-image: url("../img/svg/ship-icon.svg");
   height: 32px;
   width: 27px;
   top: 30px;
 }
 
 .advantages__advantage--all-inclusive::before {
-  background-image: url("../../img/svg/all-inclusive-icon.svg");
+  background-image: url("../img/svg/all-inclusive-icon.svg");
   height: 21px;
   width: 38px;
   top: 35px;
 }
 
 .advantages__advantage--zodiac::before {
-  background-image: url("../../img/svg/boat.svg");
+  background-image: url("../img/svg/boat.svg");
   height: 15px;
   width: 42px;
   top: 38px;
@@ -877,7 +877,7 @@ template {
 .booking {
   min-height: 555px;
   background-color: #b6dafa;
-  background-image: url("../../img/backgrounds/booking-desktop.png");
+  background-image: url("../img/backgrounds/booking-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1002,7 +1002,7 @@ template {
   position: absolute;
   width: 12px;
   height: 8px;
-  background-image: url("../../img/svg/checked-icon.svg");
+  background-image: url("../img/svg/checked-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
   left: 3px;
@@ -1038,7 +1038,7 @@ template {
 .contacts__map {
   border: none;
   background-color: #f2efe9;
-  background-image: url("../../img/backgrounds/map-desktop.png");
+  background-image: url("../img/backgrounds/map-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 560px;
@@ -1093,13 +1093,13 @@ template {
 
 .contacts__contacts-item--address::before {
   height: 22px;
-  background-image: url("../../img/svg/map-pin-icon.svg");
+  background-image: url("../img/svg/map-pin-icon.svg");
   top: 4px;
 }
 
 .contacts__contacts-item--phone::before {
   height: 18px;
-  background-image: url("../../img/svg/phone-icon.svg");
+  background-image: url("../img/svg/phone-icon.svg");
   top: 7px;
 }
 
@@ -1199,33 +1199,33 @@ template {
 }
 
 .page-footer__social--facebook {
-  background-image: url("../../img/svg/facebook-icon.svg");
+  background-image: url("../img/svg/facebook-icon.svg");
   background-position: 7px center;
 }
 
 .page-footer__social--instagram {
-  background-image: url("../../img/svg/instagram-icon.svg");
+  background-image: url("../img/svg/instagram-icon.svg");
 }
 
 .page-footer__social--twitter {
-  background-image: url("../../img/svg/twitter-icon.svg");
+  background-image: url("../img/svg/twitter-icon.svg");
 }
 
 @media (min-width: 678px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 678px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 678px) and (min-resolution: 2dppx) {
   .promo {
-    background-image: url("../../img/backgrounds/promo-desktop@2x.png");
+    background-image: url("../img/backgrounds/promo-desktop@2x.png");
   }
 
   .advantages {
-    background-image: url("../../img/backgrounds/advantages-desktop@2x.png");
+    background-image: url("../img/backgrounds/advantages-desktop@2x.png");
   }
 
   .booking {
-    background-image: url("../../img/backgrounds/booking-desktop@2x.png");
+    background-image: url("../img/backgrounds/booking-desktop@2x.png");
   }
 
   .contacts__map {
-    background-image: url("../../img/backgrounds/map-desktop@2x.png");
+    background-image: url("../img/backgrounds/map-desktop@2x.png");
   }
 }
 
@@ -1265,7 +1265,7 @@ template {
 
   .promo {
     min-height: 638px;
-    background-image: url("../../img/backgrounds/promo-tablet.png");
+    background-image: url("../img/backgrounds/promo-tablet.png");
   }
 
   .promo__wrapper {
@@ -1306,7 +1306,7 @@ template {
   }
 
   .advantages {
-    background-image: url("../../img/backgrounds/advantages-tablet.png");
+    background-image: url("../img/backgrounds/advantages-tablet.png");
   }
 
   .advantages__wrapper {
@@ -1376,7 +1376,7 @@ template {
   }
 
   .booking {
-    background-image: url("../../img/backgrounds/booking-tablet.png");
+    background-image: url("../img/backgrounds/booking-tablet.png");
     min-height: 805px;
   }
 
@@ -1418,7 +1418,7 @@ template {
   }
 
   .contacts__map {
-    background-image: url("../../img/backgrounds/map-tablet.png");
+    background-image: url("../img/backgrounds/map-tablet.png");
     min-width: 324px;
     height: 335px;
     -ms-grid-column-align: stretch;
@@ -1470,19 +1470,19 @@ template {
 
 @media (max-width: 1159px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1159px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1159px) and (min-resolution: 2dppx) {
   .promo {
-    background-image: url("../../img/backgrounds/promo-tablet@2x.png");
+    background-image: url("../img/backgrounds/promo-tablet@2x.png");
   }
 
   .advantages {
-    background-image: url("../../img/backgrounds/advantages-tablet@2x.png");
+    background-image: url("../img/backgrounds/advantages-tablet@2x.png");
   }
 
   .booking {
-    background-image: url("../../img/backgrounds/booking-tablet@2x.png");
+    background-image: url("../img/backgrounds/booking-tablet@2x.png");
   }
 
   .contacts__map {
-    background-image: url("../../img/backgrounds/map-tablet@2x.png");
+    background-image: url("../img/backgrounds/map-tablet@2x.png");
   }
 }
 
@@ -1563,7 +1563,7 @@ template {
   .page-header__wrapper--opened .page-header__menu-button {
     width: 13px;
     height: 13px;
-    background-image: url("../../img/svg/close-icon.svg");
+    background-image: url("../img/svg/close-icon.svg");
     margin-top: 5px;
   }
 
@@ -1620,7 +1620,7 @@ template {
 
   .promo {
     min-height: 500px;
-    background-image: url("../../img/backgrounds/promo-mobile.png");
+    background-image: url("../img/backgrounds/promo-mobile.png");
   }
 
   .promo__wrapper {
@@ -1667,7 +1667,7 @@ template {
   }
 
   .advantages {
-    background-image: url("../../img/backgrounds/advantages-mobile.png");
+    background-image: url("../img/backgrounds/advantages-mobile.png");
   }
 
   .advantages__wrapper {
@@ -1731,7 +1731,7 @@ template {
   }
 
   .booking {
-    background-image: url("../../img/backgrounds/booking-mobile.png");
+    background-image: url("../img/backgrounds/booking-mobile.png");
     min-height: 760px;
   }
 
@@ -1794,7 +1794,7 @@ template {
   }
 
   .contacts__map {
-    background-image: url("../../img/backgrounds/map-mobile.png");
+    background-image: url("../img/backgrounds/map-mobile.png");
     min-width: 290px;
     height: 316px;
     margin-right: 0;
@@ -1875,18 +1875,18 @@ template {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .promo {
-    background-image: url("../../img/backgrounds/promo-mobile@2x.png");
+    background-image: url("../img/backgrounds/promo-mobile@2x.png");
   }
 
   .advantages {
-    background-image: url("../../img/backgrounds/advantages-mobile@2x.png");
+    background-image: url("../img/backgrounds/advantages-mobile@2x.png");
   }
 
   .booking {
-    background-image: url("../../img/backgrounds/booking-mobile@2x.png");
+    background-image: url("../img/backgrounds/booking-mobile@2x.png");
   }
 
   .contacts__map {
-    background-image: url("../../img/backgrounds/map-mobile@2x.png");
+    background-image: url("../img/backgrounds/map-mobile@2x.png");
   }
 }

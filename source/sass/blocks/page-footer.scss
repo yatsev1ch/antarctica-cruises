@@ -134,7 +134,7 @@
   }
 
   &--facebook {
-    background-image: url("../../img/svg/facebook-icon.svg");
+    background-image: url("../img/svg/facebook-icon.svg");
     background-position: 7px center;
 
     @media (max-width: $mobile-breakpoint) {
@@ -143,11 +143,11 @@
   }
 
   &--instagram {
-    background-image: url("../../img/svg/instagram-icon.svg");
+    background-image: url("../img/svg/instagram-icon.svg");
   }
 
   &--twitter {
-    background-image: url("../../img/svg/twitter-icon.svg");
+    background-image: url("../img/svg/twitter-icon.svg");
 
     @media (max-width: $mobile-breakpoint) {
       width: 27px;

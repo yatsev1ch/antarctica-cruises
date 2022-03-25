@@ -1,26 +1,26 @@
 .advantages {
   background-color: $blue-advantages;
-  background-image: url("../../img/backgrounds/advantages-desktop.png");
+  background-image: url("../img/backgrounds/advantages-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
-    background-image: url("../../img/backgrounds/advantages-desktop@2x.png");
+    background-image: url("../img/backgrounds/advantages-desktop@2x.png");
   }
 
   @media (max-width: $tablet-breakpoint) {
-    background-image: url("../../img/backgrounds/advantages-tablet.png");
+    background-image: url("../img/backgrounds/advantages-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/advantages-tablet@2x.png");
+      background-image: url("../img/backgrounds/advantages-tablet@2x.png");
     }
   }
 
   @media (max-width: $mobile-breakpoint) {
-    background-image: url("../../img/backgrounds/advantages-mobile.png");
+    background-image: url("../img/backgrounds/advantages-mobile.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/advantages-mobile@2x.png");
+      background-image: url("../img/backgrounds/advantages-mobile@2x.png");
     }
   }
 }
@@ -117,7 +117,7 @@
   }
 
   &--ship::before {
-    background-image: url("../../img/svg/ship-icon.svg");
+    background-image: url("../img/svg/ship-icon.svg");
     height: 32px;
     width: 27px;
     top: 30px;
@@ -130,7 +130,7 @@
   }
 
   &--all-inclusive::before {
-    background-image: url("../../img/svg/all-inclusive-icon.svg");
+    background-image: url("../img/svg/all-inclusive-icon.svg");
     height: 21px;
     width: 38px;
     top: 35px;
@@ -143,7 +143,7 @@
   }
 
   &--zodiac::before {
-    background-image: url("../../img/svg/boat.svg");
+    background-image: url("../img/svg/boat.svg");
     height: 15px;
     width: 42px;
     top: 38px;

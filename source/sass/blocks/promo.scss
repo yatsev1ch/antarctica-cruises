@@ -2,29 +2,29 @@
   background-color: $blue-basic;
   min-height: $promo-desktop-height;
   box-sizing: border-box;
-  background-image: url("../../img/backgrounds/promo-desktop.png");
+  background-image: url("../img/backgrounds/promo-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
-    background-image: url("../../img/backgrounds/promo-desktop@2x.png");
+    background-image: url("../img/backgrounds/promo-desktop@2x.png");
   }
 
   @media (max-width: $tablet-breakpoint) {
     min-height: $promo-tablet-height;
-    background-image: url("../../img/backgrounds/promo-tablet.png");
+    background-image: url("../img/backgrounds/promo-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/promo-tablet@2x.png");
+      background-image: url("../img/backgrounds/promo-tablet@2x.png");
     }
   }
 
   @media (max-width: $mobile-breakpoint) {
     min-height: $promo-mobile-height;
-    background-image: url("../../img/backgrounds/promo-mobile.png");
+    background-image: url("../img/backgrounds/promo-mobile.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/backgrounds/promo-mobile@2x.png");
+      background-image: url("../img/backgrounds/promo-mobile@2x.png");
     }
   }
 }

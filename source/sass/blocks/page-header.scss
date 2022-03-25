@@ -67,7 +67,7 @@
     @media (max-width: $mobile-breakpoint) {
       width: 13px;
       height: 13px;
-      background-image: url("../../img/svg/close-icon.svg");
+      background-image: url("../img/svg/close-icon.svg");
       margin-top: 5px;
     }
   }
@@ -124,7 +124,7 @@
   height: 24px;
   background-color: transparent;
   border: none;
-  background-image: url("../../img/svg/menu-icon.svg");
+  background-image: url("../img/svg/menu-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -1px;
