@@ -108,7 +108,9 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    width: 290px;
+    min-width: 290px;
+    max-width: 100%;
+    width: auto;
     padding: 17px 30px 40px;
   }
 }
