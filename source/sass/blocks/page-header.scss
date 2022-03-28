@@ -1,9 +1,12 @@
 .page-header {
   margin-bottom: -$header-desktop-offset;
   position: relative;
+  box-sizing: border-box;
+  padding: 0 $tablet-padding;
 
   @media (max-width: $tablet-breakpoint) {
     margin-bottom: -$header-tablet-offset;
+    padding: 0;
   }
 
   &--no-js {
@@ -82,7 +85,7 @@
 .page-header__menu-overlay {
   display: none;
   position: absolute;
-  background-color: transparent;
+  background-color: $blue-overlay;
   content: "";
   width: calc(100vw);
   height: calc(100vh);

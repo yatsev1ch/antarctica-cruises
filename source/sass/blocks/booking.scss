@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
+  @media (min-width: $tablet-breakpoint) and (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/booking-desktop@2x.png");
   }
 
@@ -36,7 +36,7 @@
   padding: 50px 60px;
 
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
 
   @media (max-width: $tablet-breakpoint) {
     grid-template-columns: 1fr;
@@ -57,7 +57,7 @@
   line-height: 150%;
   font-weight: 700;
   grid-column: 1;
-  margin: 163px 102px 9px 0;
+  margin: 163px auto 9px 0;
 
   @media (max-width: $tablet-breakpoint) {
     font-size: 34px;
@@ -131,6 +131,7 @@
 
 .form input:not([type="checkbox"]) {
   display: block;
+  border-radius: 0;
   width: 100%;
   box-sizing: border-box;
   font-size: 14px;
@@ -206,6 +207,7 @@
 
 .booking form button {
   border: none;
+  cursor: pointer;
   padding: 13px 20px 14px;
   width: 100%;
 }

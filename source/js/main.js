@@ -2,6 +2,7 @@ const page = document.querySelector('.page');
 const header = document.querySelector('.page-header');
 const menu = document.querySelector('.page-header__wrapper');
 const menuOverlay = document.querySelector('.page-header__menu-overlay');
+const checkcoxLabels = document.querySelectorAll('input[type="checkbox"]+label');
 
 header.classList.remove('page-header--no-js');
 menu.classList.remove('page-header__wrapper--no-js');
@@ -40,4 +41,13 @@ menu.addEventListener('click', (evt) => {
 
 menuOverlay.addEventListener('click', () => {
   closeMenu();
+});
+
+checkcoxLabels.forEach((label) => {
+  label.addEventListener('keydown', (evt) => {
+    if (evt.key === ' ') {
+      evt.preventDefault();
+      evt.target.click();
+    }
+  });
 });

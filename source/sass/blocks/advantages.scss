@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
+  @media (min-width: $tablet-breakpoint) and (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/advantages-desktop@2x.png");
   }
 
@@ -27,6 +27,7 @@
 
 .advantages__wrapper {
   max-width: $desktop-wrapper-width;
+  min-width: 1px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 110px 0 84px;
@@ -63,12 +64,12 @@
 
 .advantages__list {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, calc(31%));
   justify-content: space-between;
-  align-items: start;
   row-gap: 15px;
 
   @media (max-width: $tablet-breakpoint) {
+    grid-template-columns: repeat(3, auto);
     column-gap: 30px;
   }
 
@@ -80,7 +81,10 @@
 }
 
 .advantages__advantage {
-  width: 360px;
+  // max-width: 360px;
+  // min-width: 1px;
+  // justify-self: stretch;
+  width: auto;
   min-height: 241px;
   background-color: $white-basic;
   box-sizing: border-box;

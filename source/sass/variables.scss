@@ -10,10 +10,11 @@ $white: #ffffff;
 $gray-cruise-description: #d8d8d9;
 $gray-map-background: #f2efe9;
 $gray-contacts-background: #f9fbfd;
+$blue-overlay: #002b6680;
 
 //Размеры
 
-$desktop-width: 1366px;
+$desktop-width: 1024px;
 $tablet-width: 768px;
 $mobile-width: 320px;
 
@@ -23,7 +24,7 @@ $mobile-padding: 15px;
 $desktop-wrapper-width: 1160px;
 $tablet-wrapper-width: 678px;
 
-$tablet-breakpoint: $desktop-wrapper-width - 1;
+$tablet-breakpoint: $desktop-width - 1;
 $mobile-breakpoint: $tablet-width - 1;
 
 $promo-desktop-height: 650px;

@@ -417,6 +417,7 @@ template {
 .container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0 45px;
 }
 
 .light-link {
@@ -493,6 +494,8 @@ template {
 
 .site-logo {
   display: block;
+  cursor: unset;
+  pointer-events: none;
 }
 
 .site-logo__image {
@@ -502,6 +505,9 @@ template {
 .page-header {
   margin-bottom: -276px;
   position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 45px;
 }
 
 .page-header__wrapper {
@@ -520,7 +526,7 @@ template {
 .page-header__menu-overlay {
   display: none;
   position: absolute;
-  background-color: transparent;
+  background-color: #002B6680;
   content: "";
   width: calc(100vw);
   height: calc(100vh);
@@ -592,6 +598,7 @@ template {
 .promo__wrapper {
   margin: 0 auto;
   max-width: 1160px;
+  min-width: 1px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 276px 95px 20px;
@@ -612,8 +619,9 @@ template {
   margin: 0;
 }
 
-.adventure {
+.adventure__wrapper {
   max-width: 1160px;
+  min-width: 1px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -670,6 +678,7 @@ template {
 
 .advantages__wrapper {
   max-width: 1160px;
+  min-width: 1px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -688,19 +697,16 @@ template {
 .advantages__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-  grid-template-columns: auto auto auto;
+  -ms-grid-columns: (calc(31%))[3];
+  grid-template-columns: repeat(3, calc(31%));
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
   row-gap: 15px;
 }
 
 .advantages__advantage {
-  width: 360px;
+  width: auto;
   min-height: 241px;
   background-color: #f9fbfd;
   -webkit-box-sizing: border-box;
@@ -755,6 +761,7 @@ template {
 
 .cruises {
   max-width: 1160px;
+  min-width: 1px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -772,14 +779,11 @@ template {
 .cruises__cruises-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[4];
-  grid-template-columns: repeat(4, auto);
+  -ms-grid-columns: (23%)[4];
+  grid-template-columns: repeat(4, 23%);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
   row-gap: 30px;
 }
 
@@ -787,21 +791,9 @@ template {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 386px;
-  height: auto;
-  min-width: 260px;
-  width: auto;
-  padding: 4px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
 }
 
 .cruises__cruise:hover .cruises__cruise-overlay,
@@ -809,15 +801,22 @@ template {
   display: block;
 }
 
+.cruises__cruise-image {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 100%;
+}
+
 .cruises__cruise-image img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  max-height: 386px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -827,19 +826,30 @@ template {
   line-height: 150%;
   font-weight: 500;
   color: #f9fbfd;
+  z-index: 2;
+  margin: 0 22px 22px 30px;
+  -ms-grid-row-align: end;
+  align-self: end;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .cruises__cruise-overlay {
   display: none;
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #011c40;
-  top: 0;
-  right: 0;
-  left: 0;
   padding: 30px 25px 5px;
-  min-height: 386px;
+  margin: 0;
+  z-index: 3;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .cruises__cruise-overlay p {
@@ -894,8 +904,8 @@ template {
   padding: 50px 60px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
 }
 
 .booking__header {
@@ -904,7 +914,7 @@ template {
   font-weight: 700;
   -ms-grid-column: 1;
   grid-column: 1;
-  margin: 163px 102px 9px 0;
+  margin: 163px auto 9px 0;
 }
 
 .booking__wrapper > p {
@@ -939,6 +949,7 @@ template {
 
 .form input:not([type="checkbox"]) {
   display: block;
+  border-radius: 0;
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1019,6 +1030,7 @@ template {
 
 .booking form button {
   border: none;
+  cursor: pointer;
   padding: 13px 20px 14px;
   width: 100%;
 }
@@ -1070,6 +1082,11 @@ template {
 }
 
 .contacts__contacts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
@@ -1215,7 +1232,7 @@ template {
   background-image: url("../img/svg/twitter-icon.svg");
 }
 
-@media (min-width: 678px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 678px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 678px) and (min-resolution: 2dppx) {
+@media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1023px) and (min-resolution: 2dppx) {
   .promo {
     background-image: url("../img/backgrounds/promo-desktop@2x.png");
   }
@@ -1233,11 +1250,7 @@ template {
   }
 }
 
-@media (max-width: 1159px) {
-  .container {
-    padding: 0 45px;
-  }
-
+@media (max-width: 1023px) {
   .site-logo__image {
     width: 38px;
     height: 20px;
@@ -1245,6 +1258,7 @@ template {
 
   .page-header {
     margin-bottom: -274px;
+    padding: 0;
   }
 
   .page-header__wrapper {
@@ -1285,7 +1299,7 @@ template {
     font-size: 18px;
   }
 
-  .adventure {
+  .adventure__wrapper {
     padding-top: 91px;
     padding-bottom: 76px;
   }
@@ -1324,6 +1338,8 @@ template {
   }
 
   .advantages__list {
+    -ms-grid-columns: (auto)[3];
+    grid-template-columns: repeat(3, auto);
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -1472,7 +1488,7 @@ template {
   }
 }
 
-@media (max-width: 1159px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1159px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1159px) and (min-resolution: 2dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .promo {
     background-image: url("../img/backgrounds/promo-tablet@2x.png");
   }
@@ -1499,9 +1515,8 @@ template {
     justify-content: space-between;
   }
 
-  .cruises__cruise {
-    min-width: 309px;
-    padding: 9px 35px;
+  .cruises__cruise-header {
+    margin: 0 22px 27px 35px;
   }
 
   .cruises__cruise-overlay {
@@ -1642,7 +1657,7 @@ template {
     line-height: 140%;
   }
 
-  .adventure {
+  .adventure__wrapper {
     padding-top: 58px;
     padding-bottom: 65px;
     -ms-grid-columns: 1fr;
@@ -1717,18 +1732,20 @@ template {
   }
 
   .cruises__cruises-list {
-    -ms-grid-columns: minmax(270px, 75%);
-    grid-template-columns: minmax(270px, 75%);
+    -ms-grid-columns: minmax(270px, 65%);
+    grid-template-columns: minmax(270px, 65%);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     justify-items: stretch;
   }
 
-  .cruises__cruise {
-    min-width: 270px;
-    max-width: 100%;
-    padding: 0 25px;
+  .cruises__cruise-image img {
+    max-height: unset;
+  }
+
+  .cruises__cruise-header {
+    margin: 0 22px 17px 26px;
   }
 
   .cruises__cruise-overlay {

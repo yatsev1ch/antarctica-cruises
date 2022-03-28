@@ -36,7 +36,7 @@
   grid-row: 1 / 5;
   margin-right: 100px;
 
-  @media (min-width: $tablet-wrapper-width) and (min-resolution: 2dppx) {
+  @media (min-width: $tablet-breakpoint) and (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/map-desktop@2x.png");
   }
 
@@ -93,6 +93,8 @@
 }
 
 .contacts__contacts-item {
+  display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   position: relative;
   grid-column: 2;

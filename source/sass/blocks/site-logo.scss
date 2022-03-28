@@ -1,5 +1,7 @@
 .site-logo {
   display: block;
+  cursor: unset;
+  pointer-events: none;
 }
 
 .site-logo__image {
