@@ -526,7 +526,7 @@ template {
 .page-header__menu-overlay {
   display: none;
   position: absolute;
-  background-color: #002B6680;
+  background-color: #002b6680;
   content: "";
   width: calc(100vw);
   height: calc(100vh);

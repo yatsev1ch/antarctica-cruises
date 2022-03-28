@@ -15,6 +15,7 @@ const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 const gcmq = require('gulp-group-css-media-queries');
 const terser = require('gulp-terser');
+const squoosh = require('gulp-squoosh');
 
 
 const css = () => {
@@ -66,11 +67,12 @@ const createWebp = () => {
 const optimizeImages = () => {
   return gulp.src('build/img/**/*.{png,jpg}')
       .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.optipng({optimizationLevel: 4}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
       ]))
       .pipe(gulp.dest('build/img'));
 };
+
 
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
