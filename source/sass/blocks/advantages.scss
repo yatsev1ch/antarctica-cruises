@@ -1,26 +1,26 @@
 .advantages {
   background-color: $blue-advantages;
-  background-image: url("../img/backgrounds/advantages-desktop.png");
+  background-image: url("../img/backgrounds/advantages-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-breakpoint) and (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/advantages-desktop@2x.png");
+    background-image: url("../img/backgrounds/advantages-desktop@2x.jpg");
   }
 
   @media (max-width: $tablet-breakpoint) {
-    background-image: url("../img/backgrounds/advantages-tablet.png");
+    background-image: url("../img/backgrounds/advantages-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/advantages-tablet@2x.png");
+      background-image: url("../img/backgrounds/advantages-tablet@2x.jpg");
     }
   }
 
   @media (max-width: $mobile-breakpoint) {
-    background-image: url("../img/backgrounds/advantages-mobile.png");
+    background-image: url("../img/backgrounds/advantages-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/advantages-mobile@2x.png");
+      background-image: url("../img/backgrounds/advantages-mobile@2x.jpg");
     }
   }
 }

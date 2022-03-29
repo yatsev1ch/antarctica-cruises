@@ -2,29 +2,29 @@
   min-height: 555px;
 
   background-color: $blue-booking;
-  background-image: url("../img/backgrounds/booking-desktop.png");
+  background-image: url("../img/backgrounds/booking-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-breakpoint) and (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/booking-desktop@2x.png");
+    background-image: url("../img/backgrounds/booking-desktop@2x.jpg");
   }
 
   @media (max-width: $tablet-breakpoint) {
-    background-image: url("../img/backgrounds/booking-tablet.png");
+    background-image: url("../img/backgrounds/booking-tablet.jpg");
     min-height: 805px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/booking-tablet@2x.png");
+      background-image: url("../img/backgrounds/booking-tablet@2x.jpg");
     }
   }
 
   @media (max-width: $mobile-breakpoint) {
-    background-image: url("../img/backgrounds/booking-mobile.png");
+    background-image: url("../img/backgrounds/booking-mobile.jpg");
     min-height: 760px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/booking-mobile@2x.png");
+      background-image: url("../img/backgrounds/booking-mobile@2x.jpg");
     }
   }
 }
